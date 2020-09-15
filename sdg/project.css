@@ -1,0 +1,88 @@
+/*body{
+background:url("hotel2.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+}*/
+img{
+			padding:40px;	
+			align:left;
+				}
+
+.Signup-box{
+			 background:#3F4C87;
+				padding:40px;
+				width:250px;
+				margin-top:45px;
+				margin-left:180px;
+				margin:0 Auto;
+				}
+form{
+	width:240px;
+	text-align:center;
+	margin-top:-10px;
+
+				}
+				
+    input {
+  box-sizing: border-box; 	-webkit-box-sizing: border-box; 	-moz-box-sizing: border-box;  				
+ 	outline: none; 
+ 	display: block; 	
+ 	width: 100%; 	
+ 	padding: 7px; 
+ 	border: none; 
+ 	border-bottom: 1px solid #ddd;
+ background: transparent; 
+ 	margin-bottom: 10px; 
+ 	font: 16px Arial, Helvetica, sans-serif;
+ 	height: 45px;
+ 	text-align:center;
+ 	border-radius:5px;
+ 	color:white;
+ 	transition:border 0.2s;
+ 	-webkit-transition: all 1s ease-in-out;
+
+-moz-transition: all 1s ease-in-out;
+
+-o-transition: all 1s ease-in-out;
+
+transition: all 1s ease-in-out;
+
+
+				}
+				
+		
+button {
+						border:none;
+						width :190px;
+						border-radius:25px;
+						line-height:20px;
+						font-size:25px;
+						padding:10px 0;
+						color:red;
+						cursor:pointer;
+						font-weight:6px;
+						}
+button:hover{
+				   color:cyan;
+				   background:black;
+				}
+				
+a{
+			color:red;	
+				}
+				
+	a:hover{color:white;}
+
+.Sign-in{
+				color:white;
+				}
+::placeholder{
+				color:white;
+				opacity:0.4;
+				}
+@media (max-width:480px){
+				.text{
+				font-size:16px;
+				}
+				
+		}
