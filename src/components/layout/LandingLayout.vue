@@ -39,6 +39,6 @@
 
 <script>
 export default {
-  name: "LandingLayout"
-};
+  name: 'LandingLayout'
+}
 </script>

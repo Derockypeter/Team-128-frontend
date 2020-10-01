@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import LandingLayout from "./layout/LandingLayout.vue";
+import LandingLayout from './layout/LandingLayout.vue'
 export default {
-  name: "LandingPage",
+  name: 'LandingPage',
   components: {
     LandingLayout
   }
-};
+}
 </script>
 <style>
-@import "../assets/css/style.css";
+@import '../assets/css/style.css'
 </style>

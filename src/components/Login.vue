@@ -34,36 +34,36 @@
 </template>
 
 <script>
-import LandingLayout from "./layout/LandingLayout.vue";
+import LandingLayout from './layout/LandingLayout.vue'
 export default {
-  name: "Login",
+  name: 'Login',
   components: {
     LandingLayout
   },
-  data() {
+  data () {
     return {
       form: {
-        email: "",
-        name: ""
+        email: '',
+        name: ''
       }
-    };
+    }
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    onSubmit (evt) {
+      evt.preventDefault()
+      alert(JSON.stringify(this.form))
     },
-    onReset(evt) {
-      evt.preventDefault();
+    onReset (evt) {
+      evt.preventDefault()
       // Reset our form values
-      this.form.email = "";
-      this.form.password = "";
+      this.form.email = ''
+      this.form.password = ''
 
       // Trick to reset/clear native browser form validation state
     }
   }
-};
+}
 </script>
 <style scoped>
-@import url("../assets/css/loginlogout.css");
+@import url('../assets/css/loginlogout.css')
 </style>

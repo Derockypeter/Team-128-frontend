@@ -22,9 +22,9 @@
 </DashboardLayout>
 </template>
 <script>
-import DashboardLayout from "../layout/DashboardLayout.vue"
+import DashboardLayout from '../layout/DashboardLayout.vue'
 export default {
-  name: "AdminDashboard",
+  name: 'AdminDashboard',
   components: {
     DashboardLayout
   }

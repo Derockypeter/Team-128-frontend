@@ -40,9 +40,9 @@
 
 <script>
 export default {
-  name: "DashboardLayout"
-};
+  name: 'DashboardLayout'
+}
 </script>
 <style>
-@import "../../assets/css/style.css";
+@import '../../assets/css/style.css'
 </style>
