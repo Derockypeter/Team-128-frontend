@@ -5,11 +5,32 @@ body{
   background-color:#F4F4F4;
 }
 
+#im{
+  margin:0;
+  padding:0;
+  top: 0;
+  left:0;
+}
+
 /* Global */
 .container{
   width:80%;
   margin:auto;
-  overflow:hidden;
+  overflow:unset;
+}
+.cad{
+  background:#3f4c87 !important;
+  color:#ffffff;
+  text-decoration:none;
+  width:150px;
+  height: 150px !important;
+}
+#sidebar{
+  background:#3f4c87;
+  color:#ffffff;
+  width:15%;
+  height:100% !important;
+  border-right:red 3px solid;
 }
 
 ul{
@@ -32,24 +53,34 @@ border-radius: 25px;
   color:white;
   border-radius:20px;
 }
+div.cont{
+  width: 100%;
+  min-height:600px;
+  background:url('../images/Train.jpeg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#d1dcff;
 
-button {
+}
+
+.bton {
 						border:none;
 						width :100px;
-						border-radius:20px;
+						border-radius:20px !important;
 						line-height:0px;
-						font-size:25px;
-						padding:10px 0;
+						font-size:25px !important;
+						padding:10px 0 !important;
 						color:red;
 						cursor:pointer;
-						font-weight:6px;
-            height:28px;
-            background:red;
+						font-weight:6px !important;
+            height:28px !important;
+            background:red !important;
           						}
 
-button:hover{
-				   color:cyan;
-				   background:black;
+.bton:hover{
+				   color:cyan !important;
+				   background:black !important;
 				}
 .dark{
   padding:15px;
@@ -68,64 +99,43 @@ button:hover{
 				}
 
 /* Header **/
-header{
+.heading{
   background:#3f4c87;
   color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
+  width:100%;
   border-bottom:red 3px solid;
 }
 
-header a{
+.heading a{
   color:#ffffff;
   text-decoration:none;
   text-transform: uppercase;
   font-size:16px;
 }
 
-header li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
-}
-
-header #branding{
-  float:left;
-}
-
-header #branding h1{
+.heading #branding h1{
   margin:0;
 }
 
-header nav{
-  float:right;
-  margin-top:10px;
-}
-
-header .highlight, header .current a{
+.heading .highlight, .header .current a{
   color:red;
   font-weight:bold;
 }
 
-header a:hover{
+.heading a:hover{
   color:#cccccc;
   font-weight:bold;
 }
 
 /* Showcase */
-#showcase{
-  min-height:400px;
-  background:url('Train.jpeg') no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align:center;
-  color:#d1dcff;
-}
+
 
 #showcase h1{
   margin-top:100px;
   font-size:55px;
   margin-bottom:10px;
+  text-align:center;
+  color:red;
 }
 
 #transparent {
@@ -202,11 +212,12 @@ ul#services li{
   background:#e6e6e6;
 }
 
-footer{
+.foot{
+  width:100%;
   padding:20px;
   margin-top:20px;
   color:#ffffff;
-  background-color:#3F4C87;
+  background-color:#3F4C87 !important;
   text-align: center;
 }
 
