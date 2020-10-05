@@ -8,9 +8,19 @@
 </template>
 
 <script>
-
+import * as apiService from './services/auth'
 export default {
-  name: 'App'
+  name: 'App',
+  beforeCreate: async function () {
+    try {
+      if (apiService.isLoggedIn()) {
+        const response = await apiService.getProfile()
+        this.$store.dispatch('authenticate_user', response.data.user)
+      }
+    } catch (error) {
+
+    }
+  }
 }
 </script>
 

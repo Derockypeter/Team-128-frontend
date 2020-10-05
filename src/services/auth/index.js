@@ -17,23 +17,23 @@ export function loginUser (user) {
 }
 
 function setToken (user) {
-  const token = jwt.sign({ user: user }, 'laravellaravelvuevuespaspa')
-  localStorage.setItem('laravelVueSpa', token)
+  const token = jwt.sign({ user: user }, 'laravellaravelvuevuespaspabuildsdgbuildsdgrailtrailt')
+  localStorage.setItem('buildSdgRaitT', token)
   store.dispatch('authenticate_user', user.user)
 }
 
 export function isLoggedIn () {
-  const token = localStorage.getItem('laravelVueSpa')
+  const token = localStorage.getItem('buildSdgRaitT')
   return token != null
 }
 
 export function logoutUser () {
   http().get('/logout')
-  localStorage.removeItem('laravelVueSpa')
+  localStorage.removeItem('buildSdgRaitT')
 }
 
 export function getAccessToken () {
-  const token = localStorage.getItem('laravelVueSpa')
+  const token = localStorage.getItem('buildSdgRaitT')
   if (!token) {
     return null
   }

@@ -6,6 +6,7 @@ import Login from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import Dashboard from '../components/layout/DashboardLayout.vue'
 import AdminDashboard from '../components/admin/AdminDashboard.vue'
+import * as auth from '../services/auth'
 
 Vue.use(VueRouter)
 
@@ -18,12 +19,26 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    component: Login,
+    beforeEnter (to, from, next) {
+      if (!auth.isLoggedIn()) {
+        next()
+      } else {
+        next('/')
+      }
+    }
   },
   {
     path: '/signup',
     name: 'SignUp',
-    component: SignUp
+    component: SignUp,
+    beforeEnter (to, from, next) {
+      if (!auth.isLoggedIn()) {
+        next()
+      } else {
+        next('/')
+      }
+    }
   },
   {
     path: '/dashboard',
