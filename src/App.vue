@@ -2,6 +2,7 @@
   <div id="app">
     <div>
       <router-view></router-view>
+      <FlashMessage position="right top"></FlashMessage>
     </div>
   </div>
 </template>
