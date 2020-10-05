@@ -7,6 +7,10 @@ import SignUp from '../components/SignUp.vue'
 import Dashboard from '../components/layout/DashboardLayout.vue'
 import AdminDashboard from '../components/admin/AdminDashboard.vue'
 import * as auth from '../services/auth'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
+NProgress.configure({ easing: 'ease', speed: 1000 })
 
 Vue.use(VueRouter)
 
@@ -65,6 +69,13 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+router.beforeResolve((to, from, next) => {
+  NProgress.start()
+  next()
+})
+router.afterEach((to, from) => {
+  NProgress.done()
 })
 
 export default router
