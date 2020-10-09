@@ -1,25 +1,42 @@
 <template>
-<DashboardLayout>
-  <div>
-    <div class="text-center">
-  <router-link to="/admin/dashboard">
-  <b-card
-    class="mb-2 card cad"
-    title="Administrators"
-    img-src=""
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-  >
-    <b-card-text>
-<b-badge variant="danger">9 <span class="sr-only">unread messages</span></b-badge>
-    </b-card-text>
-  </b-card>
-  </router-link>
-</div>
-</div>
-</DashboardLayout>
+<div>
+  <DashboardLayout>
+    <b-container fluid id="lay" >
+      <b-row>
+          <b-col cols="4">
+            <router-link to="/admin/viewadmin">
+              <b-card class="mb-2 text-center card cad">
+                <b-card-header>Administrator</b-card-header>
+                <b-card-text>
+                  <b-badge variant="danger">9 </b-badge>
+                </b-card-text>
+              </b-card>
+            </router-link>
+          </b-col>
+          <b-col cols="4">
+            <router-link to="/admin/dashboard" class="cad">
+              <b-card class="mb-2 text-center card cad">
+                <b-card-header>TSP</b-card-header>
+                <b-card-text>
+                  <b-badge variant="danger">9 </b-badge>
+                </b-card-text>
+              </b-card>
+            </router-link>
+          </b-col>
+          <b-col cols="4">
+            <router-link to="/admin/dashboard" class="cad">
+              <b-card class="mb-2 text-center card cad">
+                <b-card-header>Stations</b-card-header>
+                <b-card-text>
+                  <b-badge variant="danger">9 </b-badge>
+                </b-card-text>
+              </b-card>
+            </router-link>
+          </b-col>
+      </b-row>
+    </b-container>
+  </DashboardLayout>
+  </div>
 </template>
 <script>
 import DashboardLayout from '../layout/DashboardLayout.vue'
