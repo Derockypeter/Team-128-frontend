@@ -14,7 +14,7 @@
             </router-link>
           </b-col>
           <b-col cols="4">
-            <router-link to="/admin/dashboard" class="cad">
+            <router-link to="/admin/serviceprovider" class="cad">
               <b-card class="mb-2 text-center card cad">
                 <b-card-header>TSP</b-card-header>
                 <b-card-text>
@@ -24,7 +24,7 @@
             </router-link>
           </b-col>
           <b-col cols="4">
-            <router-link to="/admin/dashboard" class="cad">
+            <router-link to="/admin/station" class="cad">
               <b-card class="mb-2 text-center card cad">
                 <b-card-header>Stations</b-card-header>
                 <b-card-text>

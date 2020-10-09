@@ -7,6 +7,8 @@ import SignUp from '../components/SignUp.vue'
 import Dashboard from '../components/layout/DashboardLayout.vue'
 import AdminDashboard from '../components/admin/AdminDashboard.vue'
 import ViewAdmin from '../components/admin/ViewAdmin.vue'
+import ServiceProvider from '../components/admin/ServiceProvider.vue'
+import Station from '../components/admin/Stations.vue'
 
 Vue.use(VueRouter)
 
@@ -40,6 +42,16 @@ const routes = [
     path: '/admin/viewadmin',
     name: 'ViewAdmin',
     component: ViewAdmin
+  },
+  {
+    path: '/admin/serviceprovider',
+    name: 'ServiceProvider',
+    component: ServiceProvider
+  },
+  {
+    path: '/admin/station',
+    name: 'Station',
+    component: Station
   },
   {
     path: '/about',
