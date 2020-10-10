@@ -7,7 +7,7 @@
         <router-link to="/admin/viewadmin">View admin</router-link>
         </div>
         <div>
-      <b-button v-b-modal.addAdmin>Add</b-button>
+      <button v-b-modal.addAdmin><i class="fa fa-plus" aria-hidden="true"></i> New</button>
       </div>
       <div class="table">
         <b-table striped hover :items='items'></b-table>

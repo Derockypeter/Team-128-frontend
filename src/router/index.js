@@ -10,6 +10,7 @@ import ViewAdmin from '../components/admin/ViewAdmin.vue'
 import ServiceProvider from '../components/admin/ServiceProvider.vue'
 import Station from '../components/admin/Stations.vue'
 import ServiceProviderDashboard from '../components/tsp/ServiceProviderDashboard.vue'
+import ServiceSchedules from '../components/tsp/ServiceSchedules.vue'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ const routes = [
     path: '/tsp/dashboard',
     name: 'ServiceProviderDashboard',
     component: ServiceProviderDashboard
+  },
+  {
+    path: '/tsp/schedule',
+    name: 'ServiceSchedules',
+    component: ServiceSchedules
   },
   {
     path: '/about',

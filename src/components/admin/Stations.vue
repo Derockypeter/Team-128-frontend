@@ -7,7 +7,7 @@
         <router-link to="/admin/station">View Service Provider</router-link>
         </div>
         <div>
-      <b-button v-b-modal.addServiceProvider>Add</b-button>
+      <button v-b-modal.addAdmin><i class="fa fa-plus" aria-hidden="true"></i> New</button>
       </div>
       <div class="table">
         <b-table striped hover :items='items'></b-table>
