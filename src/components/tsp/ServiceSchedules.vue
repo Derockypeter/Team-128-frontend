@@ -4,7 +4,7 @@
       <div class="dashboardcon">
         <div class="dashboardlink">
           <router-link to="/tsp/dashboard">Dashboard</router-link> >
-          <router-link to="/admin/station">View Schedules</router-link>
+          <router-link to="/tsp/schedule">View Schedules</router-link>
         </div>
         <div>
           <button v-b-modal.addSchedule>

@@ -14,7 +14,7 @@
             </router-link>
           </b-col>
           <b-col cols="4">
-            <router-link to="" class="cad">
+            <router-link to="/tsp/carrier" class="cad">
               <b-card class="mb-2 text-center card cad">
                 <b-card-header>Carriers</b-card-header>
                 <b-card-text>

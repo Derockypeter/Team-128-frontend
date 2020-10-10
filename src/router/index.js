@@ -11,6 +11,7 @@ import ServiceProvider from '../components/admin/ServiceProvider.vue'
 import Station from '../components/admin/Stations.vue'
 import ServiceProviderDashboard from '../components/tsp/ServiceProviderDashboard.vue'
 import ServiceSchedules from '../components/tsp/ServiceSchedules.vue'
+import Carriers from '../components/tsp/Carriers.vue'
 
 Vue.use(VueRouter)
 
@@ -64,6 +65,11 @@ const routes = [
     path: '/tsp/schedule',
     name: 'ServiceSchedules',
     component: ServiceSchedules
+  },
+  {
+    path: '/tsp/carrier',
+    name: 'Carriers',
+    component: Carriers
   },
   {
     path: '/about',
