@@ -7,8 +7,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     isLoggedIn: false,
-    apiURL: 'http://127.0.0.1/api',
-    serverPath: 'http://127.0.0.1',
+    apiURL: 'https://team-128.herokuapp.com/api',
+    serverPath: 'https://team-128.herokuapp.com',
     profile: {}
   },
   mutations: {
