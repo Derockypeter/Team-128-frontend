@@ -20,51 +20,51 @@
               <b-form-group id="input-from">
                 <b-form-select
                   v-model="selected"
-                  :options="options"
+                  :options="from"
                 ></b-form-select>
               </b-form-group>
-              <b-form-group id="input-name">
+              <b-form-group id="input-to">
+                <b-form-select
+                  v-model="selected"
+                  :options="to"
+                ></b-form-select>
+              </b-form-group>
+              <b-form-group id="input-carrier">
+                <b-form-select
+                  v-model="selected"
+                  :options="carrier"
+                ></b-form-select>
+              </b-form-group>
+              <b-form-group id="input-departurTime" label="Departur Time">
                 <input
                   class="input"
-                  id="input-name"
-                  v-model="form.name"
-                  type="text"
+                  id="input-departurTime"
+                  v-model="form.departurTime"
+                  type="time"
                   required
                   placeholder="Enter Station name"
                 />
               </b-form-group>
-              <b-form-group id="input-state">
+              <b-form-group id="input-arrivalTime" label="Arrival Time">
                 <input
                   class="input"
-                  id="input-state"
-                  v-model="form.state"
-                  type="text"
+                  id="input-arrivalTime"
+                  v-model="form.arrivalTime"
+                  type="time"
                   required
                   placeholder="Enter Station State"
                 />
               </b-form-group>
-              <b-form-group id="input-town">
+              <b-form-group id="input-cost">
                 <input
                   class="input"
-                  id="input-town"
-                  v-model="form.town"
-                  type="town"
+                  id="input-cost"
+                  v-model="form.cost"
+                  type="number"
                   required
-                  placeholder="Enter station town"
+                  placeholder="Enter cost Naira"
                 />
               </b-form-group>
-
-              <b-form-group id="input-number">
-                <input
-                  class="input"
-                  id="input-number"
-                  v-model="form.number"
-                  type="text"
-                  required
-                  placeholder="Enter station number"
-                />
-              </b-form-group>
-
               <button type="submit" class="button">Add</button>
             </b-form>
           </div>
@@ -94,12 +94,20 @@ export default {
         }
       ],
       selected: null,
-      options: [
-        { value: null, text: 'Please select an option' },
-        { value: 'a', text: 'This is First option' },
-        { value: 'b', text: 'Selected Option' },
-        { value: { C: '3PO' }, text: 'This is an option with object value' },
-        { value: 'd', text: 'This one is disabled', disabled: true }
+      from: [
+        { value: null, text: 'Please select a station' },
+        { value: 'id', text: 'Kaduna' },
+        { value: 'id', text: 'Abuja' }
+      ],
+      to: [
+        { value: null, text: 'Please select a destination' },
+        { value: 'id', text: 'Kaduna' },
+        { value: 'id', text: 'Abuja' }
+      ],
+      carrier: [
+        { value: null, text: 'Select a carrier' },
+        { value: 'id', text: 'C 354' },
+        { value: 'id', text: 'C 127' }
       ],
       form: {
         email: '',
