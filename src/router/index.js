@@ -6,6 +6,12 @@ import Login from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import Dashboard from '../components/layout/DashboardLayout.vue'
 import AdminDashboard from '../components/admin/AdminDashboard.vue'
+import ViewAdmin from '../components/admin/ViewAdmin.vue'
+import ServiceProvider from '../components/admin/ServiceProvider.vue'
+import Station from '../components/admin/Stations.vue'
+import ServiceProviderDashboard from '../components/tsp/ServiceProviderDashboard.vue'
+import ServiceSchedules from '../components/tsp/ServiceSchedules.vue'
+import Carriers from '../components/tsp/Carriers.vue'
 import * as auth from '../services/auth'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -53,6 +59,36 @@ const routes = [
     path: '/admin/dashboard',
     name: 'AdminDashboard',
     component: AdminDashboard
+  },
+  {
+    path: '/admin/viewadmin',
+    name: 'ViewAdmin',
+    component: ViewAdmin
+  },
+  {
+    path: '/admin/serviceprovider',
+    name: 'ServiceProvider',
+    component: ServiceProvider
+  },
+  {
+    path: '/admin/station',
+    name: 'Station',
+    component: Station
+  },
+  {
+    path: '/tsp/dashboard',
+    name: 'ServiceProviderDashboard',
+    component: ServiceProviderDashboard
+  },
+  {
+    path: '/tsp/schedule',
+    name: 'ServiceSchedules',
+    component: ServiceSchedules
+  },
+  {
+    path: '/tsp/carrier',
+    name: 'Carriers',
+    component: Carriers
   },
   {
     path: '/about',

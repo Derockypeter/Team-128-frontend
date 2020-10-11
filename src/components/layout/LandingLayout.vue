@@ -11,7 +11,7 @@
             <b-navbar-nav>
               <b-nav-item><router-link to="/">Home</router-link> </b-nav-item>
               <b-nav-item
-                ><router-link to="/dashboard">About Us</router-link></b-nav-item
+                ><router-link to="/admin/dashboard">About Us</router-link></b-nav-item
               >
               <b-nav-item
                 ><router-link to="/">Our Team</router-link></b-nav-item
