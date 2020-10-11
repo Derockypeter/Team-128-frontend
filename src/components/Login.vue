@@ -29,12 +29,15 @@
         <button type="submit" class="button">Submit</button>
 
       </b-form>
+      <br><br>
+      <button id="" class="button">Sign with Facebook</button>
     </div>
   </landing-layout>
 </template>
 
 <script>
 import LandingLayout from './layout/LandingLayout.vue'
+import * as apiService from '../services/auth/index'
 export default {
   name: 'Login',
   components: {
@@ -44,22 +47,54 @@ export default {
     return {
       form: {
         email: '',
-        name: ''
+        password: ''
       }
     }
   },
   methods: {
-    onSubmit (evt) {
+    async onSubmit (evt) {
       evt.preventDefault()
-      alert(JSON.stringify(this.form))
+      try {
+        const response = await apiService.loginUser(this.form)
+        this.errors = {}
+        this.flashMessage.success({
+          message: 'Successful login',
+          time: 5000
+        })
+        console.log(response)
+        this.$router.push('/')
+      } catch (error) {
+        console.log(error)
+        console.log(error.response)
+        switch (error.response.status) {
+          case 422:
+            this.errors = error.response.data.errors
+            break
+          case 401:
+            this.flashMessage.error({
+              message: error.response.data.message,
+              time: 5000
+            })
+            break
+          case 500:
+            this.flashMessage.error({
+              message: error.response.data.message,
+              time: 5000
+            })
+            break
+          default:
+            this.flashMessage.error({
+              message: 'Some error occured, try again',
+              time: 5000
+            })
+            break
+        }
+      }
     },
     onReset (evt) {
       evt.preventDefault()
-      // Reset our form values
       this.form.email = ''
       this.form.password = ''
-
-      // Trick to reset/clear native browser form validation state
     }
   }
 }
