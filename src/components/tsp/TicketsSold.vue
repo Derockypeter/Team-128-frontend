@@ -7,12 +7,12 @@
         <router-link to="/tsp/schedule">View Service Provider</router-link>
         </div>
         <div>
-      <button v-b-modal.addAdmin><i class="fa fa-plus" aria-hidden="true"></i> New</button>
+      <button v-b-modal.addTicketsSold><i class="fa fa-plus" aria-hidden="true"></i> New</button>
       </div>
       <div class="table">
         <b-table striped hover :items='items'></b-table>
       </div>
-      <b-modal id="addServiceProvider" title="Add Service Provider">
+      <b-modal id="addTicketsSold" title="Add Service Provider">
         <div id="modal" class="">
           <b-form class="form" @submit='onSubmit' @reset='onReset'>
             <b-form-group id="name">
@@ -69,7 +69,7 @@
 <script>
 import DashboardLayout from '../layout/DashboardLayout.vue'
 export default {
-  name: 'ServiceProvider',
+  name: 'TicketsSold',
   components: {
     DashboardLayout
   },
