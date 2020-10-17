@@ -1,4 +1,5 @@
 <template>
+<div>
   <LandingLayout>
     <div class="cont">
       <section id="showcase">
@@ -9,6 +10,7 @@
       </section>
     </div>
   </LandingLayout>
+</div>
 </template>
 
 <script>

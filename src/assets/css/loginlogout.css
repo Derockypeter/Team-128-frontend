@@ -16,6 +16,32 @@ background-repeat:no-repeat;
         margin-left:180px;
         margin:0 Auto;
         }
+#addAdmin{
+     background:#b8b9bd;
+        padding:100px;
+        widows: 100%;
+        margin-top:45px;
+        margin-left:180px;
+        margin:0 Auto;
+        }
+#modal{
+     background:#3F4C87;
+        padding:100px;
+        widows: 100%;
+        margin-top:45px;
+        margin-left:180px;
+        margin:0 Auto;
+        }
+.dashboardcon{
+        padding: 20px;
+}
+.table{
+        padding: 5px;
+}
+.dashboardlink{
+        left: 0;
+        float: left;
+}
 .form{
 width:100%;
 text-align:center;

@@ -25,6 +25,9 @@ body{
   width:150px;
   height: 150px !important;
 }
+#lay{
+  margin:50px;
+}
 #sidebar{
   background:#3f4c87;
   color:#ffffff;
